@@ -1,7 +1,9 @@
 #!/bin/bash
 
 source ./common.sh
-check_root() # to call from one scrit from another acript we should keep in function i.e common.sh
+
+#
+check_root
 
 echo "Please enter DB password:"
 read -s mysql_root_password

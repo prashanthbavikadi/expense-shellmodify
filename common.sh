@@ -14,7 +14,7 @@ VALIDATE() {
     if [ $? -ne 0 ]
 then
     echo -e "$2  $R FAILURE"
-    exit1
+    exit 1
 else 
     echo -e .."$2  $G SUCCESS"
 fi
@@ -25,7 +25,7 @@ check_root(){
      if [ $USERID -ne 0 ]
      then 
          echo "please the run the root access"
-         exit2
+         exit 1
      else
          echo "you are in root access"
      fi

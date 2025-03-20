@@ -1,8 +1,8 @@
 #!/bin/bash
 
 source ./common.sh
+# here source is indicates when we are call from one script to another we use function
 
-#
 check_root
 
 echo "Please enter DB password:"
